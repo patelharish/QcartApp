@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EbankingApp]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="BankingApp Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.qcart.tests.LoginTest">
+        <methods>
+          <include name="skipped"/>
+          <include name="loginWithValidCredentials" invocation-numbers="0"/>
+          <include name="loginWithInvalidCredentials"/>
+          <include name="setUp"/>
+          <include name="failure"/>
+          <include name="tearDown"/>
+          <include name="failure2"/>
+        </methods>
+      </class> <!-- com.qcart.tests.LoginTest -->
+    </classes>
+  </test> <!-- BankingApp Test(failed) -->
+</suite> <!-- Failed suite [EbankingApp] -->
